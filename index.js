@@ -172,7 +172,114 @@
 //   document.addEventListener("click", handler);
 // }
 
-//12
-{
-    
-}
+// {
+//     // 12 What is a first order function
+
+//     // Birinchi darajali funktsiya boshqa funktsiyani argument sifatida qabul qilmaydigan va funktsiyani qaytarish qiymati sifatida qaytarmaydigan funktsiyadir.
+// const func = ()=> {console.log("I am a first order function!");}
+// func();
+// }
+
+// {
+//     // 13 What is a higher order function bu shunchaki arrow function argument ola oladi funcsiya qaytara oladi
+//     const firstOrderFunc = ()=>{
+//         console.log("I am high order function !");
+//     }
+
+//     const highOrderFunc = (returnfirstOrderFunc)=> returnfirstOrderFunc();
+//     highOrderFunc(firstOrderFunc);
+
+// }
+// {
+//     //14  What is a unary function
+
+//     // unary funksiya bu faqat bitta argument oladi xolos
+
+//     const unaryFunc = (a) =>{
+//         console.log(a+10);
+//     }
+//     unaryFunc(20);
+// }
+
+// {
+//     // 15 What is the currying function
+//     // currying function bu ko'p argumentlari qalub qiluvchi funcsiya hisoblanadi
+//     // const curryFunc = (a,b,c)=>{
+//     //     console.log(a+b+c);
+//     // }
+//     // curryFunc(1,2,3);
+
+// }
+
+// {
+//     // 16 What is a pure function
+//     // ???
+
+// }
+
+// {
+//     //17 18 What is the purpose of the let keyword , What is the difference between let and var
+
+//     function varTest() {
+//         var x = 1;
+//         {
+//           var x = 2;  // same variable!
+//           console.log(x);  // 2
+//         }
+//         console.log(x);  // 2
+//       }
+
+//       function letTest() {
+//         let x = 1;
+//         {
+//           let x = 2;  // different variable
+//           console.log(x);  // 2
+//         }
+//         console.log(x);  // 1
+//       }
+// }
+
+// {
+//   // 19 What is the reason to choose the name let as a keyword
+
+//   // chunki u ananaviy
+//   let a = 10;
+// }
+
+// 20 How do you redeclare variables in switch block without an error
+
+// buning uchun {} ichida yozish kerak
+// let counter = 1;
+// switch (x) {
+//   case 1:
+//     {let name;
+//     break;}
+
+//   case 2:
+//     {let name;
+//     break;}
+//   default:
+//     break;
+// }
+
+// {
+//     // 21 What is the Temporal Dead Zone
+//     // var orqali o'zgaruvchi elon qilganimizda elon qilishdan oldin bu o'garuvchini ishlatsak shu oraliq teporal dead zone deyiladi ... let va const da ReferenceError chiqadi
+//     function func(){
+//         console.log(a);
+
+//         var a = 10;
+//     }
+//     func()
+// }
+
+// {
+//     // 22 What is IIFE(Immediately Invoked Function Expression) darhol chaqiriladigan funksiya ifodasi deb tarjima qilinadi
+    // (function func(){
+    //     return "Hello"
+    // })();
+// (function () {
+//     var message = 'IIFE';
+//     console.log(message);
+//   })();
+// }
