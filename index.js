@@ -213,7 +213,14 @@
 
 // {
 //     // 16 What is a pure function
-//     // ???
+//    // Pure function bu funksiya ichidagi qiymatlarga tashqi tomondan tasir ko'rsata olmaymiz
+
+// function pureFunc(name) {
+//    return `hello ${name}`
+//}
+// pureFunc("Akbar");
+// bu xolatda ismni berganimizda biz hello biz bergan ism chiqishini oldindan bilamiz hello sozini tashiqi tomondan ozgartirmadik
+
 
 // }
 
