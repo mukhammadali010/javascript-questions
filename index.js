@@ -221,7 +221,6 @@
 // pureFunc("Akbar");
 // bu xolatda ismni berganimizda biz hello biz bergan ism chiqishini oldindan bilamiz hello sozini tashiqi tomondan ozgartirmadik
 
-
 // }
 
 // {
@@ -282,11 +281,122 @@
 
 // {
 //     // 22 What is IIFE(Immediately Invoked Function Expression) darhol chaqiriladigan funksiya ifodasi deb tarjima qilinadi
-    // (function func(){
-    //     return "Hello"
-    // })();
+// (function func(){
+//     return "Hello"
+// })();
 // (function () {
 //     var message = 'IIFE';
 //     console.log(message);
 //   })();
+// }
+
+// {
+//     // 22 	How do you decode or encode a URL in JavaScript?
+//     // encodeURL() funksiyasi URL manzilini parametr sifatida oladi va string qaytaradi
+//     // let  encode_URI  = encodeURL(url manzil);
+//     // ler decode_URI = decodeURL(encode_URI)
+// }
+
+// {
+//     // 23 What is memoization
+// }
+// const memoizAddition = () => {
+//     let cache = {};
+//     console.log(cache);
+//     return (value) => {
+//       if (value in cache) {
+//         console.log("Fetching from cache");
+//         return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
+//       } else {
+//         console.log("Calculating result");
+//         let result = value + 30;
+//         cache[value] = result;
+//         return result;
+//       }
+//     };
+//   };
+//   // returned function from memoizAddition
+//   const addition = memoizAddition();
+//   console.log(addition(20)); //output: 40 calculated
+//   console.log(addition(20)); //output: 40 cached
+
+// {
+// //24 What is Hoisting
+// // hoistingga qisqacha misol bu faqat var kalit so'zi bilan ishlaydi va function declarations and classes larda ham ishlaydi arrow function daishlamaydi 
+//   ("use strict");
+//   a = 10;
+//   console.log(a);
+//   let a;
+
+
+// message("Good morning"); //Good morning
+
+// function message(name) {
+//   console.log(name);
+// }
+
+// }
+
+
+// {
+//     //25 What are classes in ES6
+//     // class lar ES6 versiyadan boshlab kirib kelgan (OOP)
+//     class Bike {
+//         constructor(color , price){
+//             this.color = color;
+//             this.price = price;
+//         }
+//         getDetails(){
+//            return "Bike is " + this.price +" pound" + " and " + "it's color is " + this.color
+
+//         }
+//     }   
+
+//     const bikeInfo = new Bike("red" , "1300 $")
+//    console.log( bikeInfo.getDetails());
+
+// }
+
+// {
+//     //26 What are closures
+//     // Quyidagi funksiyada Welcome funksiyasini ichidagi greetingInfo funksiyasi welcome ning name parametridan foydalanmoqda mana shu  closure deyiladi yani o'zini o'rab turgan funksiyani parametrlaridan foydalana oladi ichida turgan funksiya
+
+//     function Welcome(name) {
+//         var greetingInfo = function (message) {
+//           console.log(message + " " + name);
+//         };
+//         return greetingInfo;
+//       }
+//       var myFunction = Welcome("John");
+//       myFunction("Welcome "); //Output: Welcome John
+//       myFunction("Hello Mr."); //output: Hello Mr.John
+// }
+
+// {
+//     // 27 Modules 
+//     // Modullar nima
+// // Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn naqshlarining asosi bo'lib xizmat qiladi. JavaScript modullarining aksariyati ob'ektni, funktsiyani yoki konstruktorni eksport qiladi
+// }
+
+// {
+//     //28 Why do you need modules
+//     // 1) Maintainability
+//     // 2) Reusability
+//     // 3) Namespacing
+// }
+
+// {
+//     //30 What is scope in javascript
+//     // bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funktsiyalar va ob'ektlardan foydalanish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
+
+// }
+
+// {
+//     //31 What is a service worker
+//     // Xizmat xodimi asosan fonda ishlaydigan skript (JavaScript fayli), veb-sahifadan ajratilgan va veb-sahifa yoki foydalanuvchining oʻzaro taʼsirini talab qilmaydigan xususiyatlarni taqdim etadi. Xizmat xodimlarining asosiy xususiyatlaridan ba'zilari - bu boy oflayn tajribalar (oflayn birinchi veb-ilovalarni ishlab chiqish), davriy fon sinxronizatsiyasi, push-bildirishnomalar, tarmoq so'rovlarini ushlab turish va boshqarish va javoblar keshini dasturiy ravishda boshqarish.
+// }
+
+// {
+//     //32 How do you manipulate DOM using a service worker
+//     // Xizmat xodimi DOMga bevosita kira olmaydi. Lekin u postMessage interfeysi orqali yuborilgan xabarlarga javob berish orqali o‘zi boshqaradigan sahifalar bilan bog‘lana oladi va bu sahifalar DOMni boshqarishi mumkin.
 // }
