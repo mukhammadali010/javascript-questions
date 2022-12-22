@@ -400,3 +400,51 @@
 //     //32 How do you manipulate DOM using a service worker
 //     // Xizmat xodimi DOMga bevosita kira olmaydi. Lekin u postMessage interfeysi orqali yuborilgan xabarlarga javob berish orqali o‘zi boshqaradigan sahifalar bilan bog‘lana oladi va bu sahifalar DOMni boshqarishi mumkin.
 // }
+
+// {
+//     //37 What is a cookie 
+//     // cookie bu bizning brauzerimizdagi cookie  dagi key va value juftligi hisoblanadi
+// }
+
+//39 Why do you need a Cookie
+// cookie lar bizga userlar haqidagi axborotlarni eslab qolishda kerak boladi misol uchun username larni eslab qoladi 
+// ikkita qadamni o'z ichiga oladi 1) qachonki user web page ga kirganda uni profili cookie ga joylanadi , 2) keyingi marta web page ga kirganda uning profilini cookie eslab qoladi 
+
+// 40 How do you delete a cookie
+// Yaroqlilik muddatini o'tgan sana sifatida belgilash orqali cookie faylini o'chirishingiz mumkin
+// document.cookie =
+//   "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
+
+//41 What are the differences between cookie, local storage and session storage
+/// cookie - client-side va server-side ga boglana oladi local va session storage lar esa faqat client-side da ishlaydi
+// lifetime : cookie sozlangan muddati tugaydi , local storage -> ochirib yuborilguncha ,  session storage -> yangi tab ochilguncha 
+// SSl : cookie -> supported ,  local va session -> not supported
+// maximum data size : cookie -> 4 KB , local va session -> 5 MB
+
+// 43 How do you access web storage
+// localstorage.setItem("key" , "value") -> malumotni joylash 
+// localstorage.getItem("key" , "value") - > maulotni olish
+
+// 44 What are the methods available on session storage
+// Save data to sessionStorage
+// sessionStorage.setItem("key", "value");
+
+// // Get saved data from sessionStorage
+// let data = sessionStorage.getItem("key");
+
+// // Remove saved data from sessionStorage
+// sessionStorage.removeItem("key");
+
+// // Remove all saved data from sessionStorage
+// sessionStorage.clear();
+
+// 45 What is a storage event and its event handler ?
+
+// 46 Why do you need web storage
+// qisqa va muhim malumotlarini  saqlash uchun ishlatiladi va bu malumotlari server ga o'tkazmaydi
+// 47 How do you check web storage browser support
+// if (typeof Storage !== "undefined") {
+//     // Code for localStorage/sessionStorage.
+//   } else {
+//     // Sorry! No Web Storage support..
+//   }
